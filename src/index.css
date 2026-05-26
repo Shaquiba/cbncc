@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors mapping */
+  --color-surface-variant: #e2e2e7;
+  --color-on-secondary-container: #636468;
+  --color-on-secondary: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-tertiary: #ffffff;
+  --color-on-secondary-fixed-variant: #45474a;
+  --color-surface: #ECEBEC;
+  --color-primary-container: #1b1b1b;
+  --color-tertiary-container: #1a1c1c;
+  --color-secondary-fixed: #e2e2e6;
+  --color-inverse-on-surface: #f0f0f5;
+  --color-error-container: #ffdad6;
+  --color-surface-container-high: #e8e8ed;
+  --color-background: #ECEBEC;
+  --color-on-tertiary-fixed: #1a1c1c;
+  --color-surface-tint: #5e5e5e;
+  --color-on-primary-fixed-variant: #474747;
+  --color-on-primary-fixed: #1b1b1b;
+  --color-on-primary-container: #848484;
+  --color-inverse-surface: #2e3034;
+  --color-tertiary-fixed-dim: #c6c6c7;
+  --color-tertiary-fixed: #e2e2e2;
+  --color-primary: #000000;
+  --color-surface-container-low: #f3f3f8;
+  --color-on-tertiary-fixed-variant: #454747;
+  --color-surface-bright: #ECEBEC;
+  --color-on-primary: #ffffff;
+  --color-secondary-container: #e2e2e6;
+  --color-surface-container: #ededf2;
+  --color-on-surface: #1a1c1f;
+  --color-on-secondary-fixed: #1a1c1f;
+  --color-on-tertiary-container: #838484;
+  --color-on-background: #1a1c1f;
+  --color-error: #ba1a1a;
+  --color-secondary: #5d5e62;
+  --color-surface-dim: #d9dade;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #e2e2e2;
+  --color-surface-container-highest: #e2e2e7;
+  --color-outline: #7e7576;
+  --color-inverse-primary: #c6c6c6;
+  --color-on-surface-variant: #4c4546;
+  --color-secondary-fixed-dim: #c6c6ca;
+  --color-outline-variant: #cfc4c5;
+  --color-primary-fixed-dim: #c6c6c6;
+  --color-tertiary: #000000;
+  --color-on-error: #ffffff;
+
+  /* Font Families mapping */
+  --font-display-xl: Sora, sans-serif;
+  --font-display-xl-mobile: Sora, sans-serif;
+  --font-headline-lg: Sora, sans-serif;
+  --font-body-md: "Space Grotesk", sans-serif;
+  --font-label-sm: "Space Grotesk", sans-serif;
+  --font-headline-lg-mobile: Sora, sans-serif;
+  --font-body-lg: "Space Grotesk", sans-serif;
+  --font-label-caps: "Space Grotesk", sans-serif;
+
+  /* Spacing mapping */
+  --spacing-gutter: 24px;
+  --spacing-unit: 8px;
+  --spacing-margin-desktop: 64px;
+  --spacing-container-max: 1440px;
+  --spacing-margin-mobile: 20px;
+  --spacing-grid-columns: 12;
+}
+
+/* Custom Base / Utility Styles */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.technical-grid {
+  background-image: 
+    radial-gradient(circle at 50% 50%, transparent 0%, transparent 60%, rgba(192, 192, 196, 0.1) 60.5%, transparent 61%),
+    radial-gradient(circle at 50% 50%, transparent 0%, transparent 40%, rgba(192, 192, 196, 0.05) 40.5%, transparent 41%);
+  background-size: 100% 100%;
+}
+
+/* Hide scrollbar by default for premium look */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(207, 196, 197, 0.3);
+}
+
+.dark .glass-panel {
+  background: rgba(10, 10, 12, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 3D card layout properties */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+/* Hover link underline slide animation */
+.hover-underline-slide {
+  position: relative;
+}
+.hover-underline-slide::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+.hover-underline-slide:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Custom Selection style */
+::selection {
+  background: #000000;
+  color: #ffffff;
+}
+
+.dark ::selection {
+  background: #ffffff;
+  color: #000000;
+}
