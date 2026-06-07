@@ -24,13 +24,12 @@ export default function Hero() {
     <main className="relative min-h-screen w-full bg-background select-none transition-colors duration-300">
       
       {/* Mobile & Tablet Layout (< md breakpoint) */}
-      <div className="flex md:hidden flex-col items-center justify-between w-full min-h-screen px-[clamp(1rem,4vw,2rem)] pt-[clamp(5.5rem,12vh,7.5rem)] pb-[clamp(1.5rem,4vh,3rem)] select-none relative z-20 overflow-x-hidden">
+      <div className="flex md:hidden flex-col items-center justify-between w-full min-h-screen px-[clamp(1rem,4vw,2rem)] pt-10 pb-[clamp(1.5rem,4vh,3rem)] select-none relative z-20 overflow-x-hidden">
         
         {/* Main Content Area: Left/Right Two-Column Mobile Layout */}
-        <div className="flex flex-row items-center justify-between gap-[clamp(1rem,5vw,3rem)] w-full max-w-[clamp(280px,95vw,680px)] my-auto">
-          
+        <div className="flex flex-row items-center justify-between gap-2 w-full px-0">
           {/* Left Column: Robot Image & Glowing Halo */}
-          <div className="relative w-[48%] flex items-center justify-center animate-fade-up">
+          <div className="relative w-[60%] flex items-center justify-center animate-fade-up">
             {/* 1. Large Soft Outer Glow (Radial White Glow) */}
             <div className="absolute w-[160%] aspect-square rounded-full bg-white dark:bg-white/10 blur-xl opacity-90 dark:opacity-30 z-0 pointer-events-none" />
 
@@ -41,12 +40,12 @@ export default function Hero() {
             <img
               alt="CBNCC Chrome Robot Profile"
               src="/robo.png"
-              className="w-[200%] max-w-none h-auto object-contain z-10 select-none relative drop-shadow-[0_8px_16px_rgba(0,0,0,0.12)] dark:drop-shadow-[0_16px_32px_rgba(0,0,0,0.5)] -translate-x-[12%] translate-y-[5%]"
-            />
+              className="w-[260%] max-w-none h-auto object-contain z-10 relative -translate-x-[18%] translate-y-[8%]"
+              />
           </div>
 
           {/* Right Column: Branding Content */}
-          <div className="flex flex-col items-start text-left w-[48%]">
+           <div className="flex flex-col items-start text-left flex-1">
             {/* Title Heading */}
             <h1 
               className="text-[clamp(1.6rem,7.5vw,3.2rem)] font-black text-on-background uppercase tracking-tight leading-none animate-fade-up delay-100"
@@ -72,16 +71,16 @@ export default function Hero() {
             </p>
 
             {/* CTA Buttons */}
-            <div className="w-full flex flex-col gap-[clamp(0.4rem,1.2vh,0.6rem)] animate-fade-up delay-400">
+            <div className="w-full flex flex-col gap-2 animate-fade-up delay-400">
               <button
-                className="flex items-center justify-between gap-[clamp(0.4rem,1.5vw,0.8rem)] w-full max-w-[clamp(115px,36vw,180px)] px-[clamp(0.6rem,2vw,1rem)] py-[clamp(0.5rem,1.5vh,0.7rem)] bg-black text-white dark:bg-white dark:text-black rounded-full font-body-md font-bold text-[clamp(8.5px,2vw,10.5px)] tracking-wider uppercase transition-all duration-300 hover:opacity-95 hover:scale-[1.02] active:scale-98 shadow-md cursor-pointer border border-on-background/10 dark:border-white/10"
+                className="flex items-center justify-between gap-[clamp(0.4rem,1.5vw,0.8rem)] w-full max-w-[160px] px-[clamp(0.6rem,2vw,1rem)] py-[clamp(0.5rem,1.5vh,0.7rem)] bg-black text-white dark:bg-white dark:text-black rounded-full font-body-md font-bold text-[clamp(8.5px,2vw,10.5px)] tracking-wider uppercase transition-all duration-300 hover:opacity-95 hover:scale-[1.02] active:scale-98 shadow-md cursor-pointer border border-on-background/10 dark:border-white/10"
               >
                 <span>Join CBNCC</span>
                 <span className="material-symbols-outlined text-[clamp(10px,2.2vw,13px)]">east</span>
               </button>
 
               <button
-                className="flex items-center justify-between gap-[clamp(0.4rem,1.5vw,0.8rem)] w-full max-w-[clamp(115px,36vw,180px)] px-[clamp(0.6rem,2vw,1rem)] py-[clamp(0.5rem,1.5vh,0.7rem)] bg-white/5 dark:bg-black/5 border border-on-background/15 dark:border-white/15 text-on-background rounded-full font-body-md font-bold text-[clamp(8.5px,2vw,10.5px)] tracking-wider uppercase transition-all duration-300 hover:bg-on-background/5 hover:scale-[1.02] active:scale-98 shadow-sm backdrop-blur-sm cursor-pointer"
+                className="flex items-center justify-between gap-[clamp(0.4rem,1.5vw,0.8rem)] w-full max-w-[160px] px-[clamp(0.6rem,2vw,1rem)] py-[clamp(0.5rem,1.5vh,0.7rem)] bg-white/5 dark:bg-black/5 border border-on-background/15 dark:border-white/15 text-on-background rounded-full font-body-md font-bold text-[clamp(8.5px,2vw,10.5px)] tracking-wider uppercase transition-all duration-300 hover:bg-on-background/5 hover:scale-[1.02] active:scale-98 shadow-sm backdrop-blur-sm cursor-pointer"
               >
                 <span>Learn More</span>
                 <span className="material-symbols-outlined text-[clamp(10px,2.2vw,13px)]">east</span>
