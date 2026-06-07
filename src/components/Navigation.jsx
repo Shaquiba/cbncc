@@ -24,8 +24,8 @@ export default function Navigation() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-on-background/10 transition-colors duration-300 text-on-background">
-        <div className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto animate-fade-in">
+      <header className="fixed z-50 transition-all duration-300 text-on-background top-4 left-4 right-4 rounded-2xl glass-panel shadow-lg border border-on-background/5 md:top-0 md:left-0 md:right-0 md:w-full md:rounded-none md:bg-background/80 md:backdrop-blur-md md:border-b md:border-on-background/10 md:border-x-0 md:border-t-0 md:shadow-none">
+        <div className="flex justify-between items-center w-full px-5 py-3 md:px-margin-desktop md:py-4 max-w-container-max mx-auto animate-fade-in">
           {/* Logo */}
           <div className="flex items-center gap-3 select-none cursor-pointer">
             
