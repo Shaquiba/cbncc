@@ -24,10 +24,9 @@ export default function Hero() {
     <main className="relative min-h-screen w-full bg-background select-none transition-colors duration-300">
       
       {/* Mobile & Tablet Layout (< md breakpoint) */}
-      <div className="flex md:hidden flex-col items-center justify-between w-full min-h-screen px-[clamp(1rem,4vw,2rem)] pt-10 pb-[clamp(1.5rem,4vh,3rem)] select-none relative z-20 overflow-x-hidden">
-        
+       <div className="flex md:hidden flex-col items-center justify-center w-full min-h-screen px-4 py-6 select-none relative z-20 overflow-x-hidden">
         {/* Main Content Area: Left/Right Two-Column Mobile Layout */}
-        <div className="flex flex-row items-center justify-between gap-2 w-full px-0">
+        <div className="flex flex-row items-center justify-between gap-3 w-full">
           {/* Left Column: Robot Image & Glowing Halo */}
           <div className="relative w-[60%] flex items-center justify-center animate-fade-up">
             {/* 1. Large Soft Outer Glow (Radial White Glow) */}
