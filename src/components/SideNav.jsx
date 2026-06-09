@@ -9,7 +9,7 @@ export default function SideNav() {
   ];
 
   return (
-    <nav className="fixed left-margin-desktop top-1/2 -translate-y-1/2 z-40 hidden md:flex flex-col items-center space-y-unit bg-transparent font-label-caps text-label-caps select-none">
+    <nav className="fixed left-margin-desktop top-1/2 -translate-y-1/2 z-40 hidden lg:flex flex-col items-center space-y-unit bg-transparent font-label-caps text-label-caps select-none">
       <div className="mb-4 opacity-40 text-[9px] tracking-[0.2em] text-primary dark:text-white">
         INDEX
       </div>

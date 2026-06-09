@@ -5,7 +5,7 @@ import Hero from './components/Hero';
 
 export default function App() {
   return (
-    <div className="relative min-h-screen bg-background text-on-background font-body-md overflow-y-auto overflow-x-hidden md:overflow-hidden transition-colors duration-300">
+    <div className="relative min-h-screen bg-background text-on-background font-body-md overflow-y-auto overflow-x-hidden lg:overflow-hidden transition-colors duration-300">
       {/* Technical Grid Background */}
       <div className="fixed inset-0 technical-grid pointer-events-none opacity-40 z-0"></div>
 
@@ -20,7 +20,7 @@ export default function App() {
       <Hero />
 
       {/* Bottom Footer */}
-      <footer className="fixed bottom-0 left-0 w-full px-margin-mobile md:px-margin-desktop py-gutter flex justify-between items-end z-40 pointer-events-none select-none hidden md:flex">
+      <footer className="fixed bottom-0 left-0 w-full px-margin-mobile lg:px-margin-desktop py-gutter flex justify-between items-end z-40 pointer-events-none select-none hidden lg:flex">
         <div className="pointer-events-auto transition-colors duration-300">
           <p className="font-body-md text-[9px] sm:text-[10px] text-secondary dark:text-outline-variant/60 tracking-widest font-semibold">
             © {new Date().getFullYear()} CBNCC • AI • AUTOMATION • FUTURE

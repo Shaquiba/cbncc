@@ -36,8 +36,7 @@ export default function ParticleBackground() {
 
     // Helper to get current theme color for particles
     const getParticleColor = () => {
-      const isDark = document.documentElement.classList.contains('dark');
-      return isDark ? 'rgba(255, 255, 255, 0.45)' : 'rgba(0, 0, 0, 0.45)';
+      return 'rgba(255, 255, 255, 0.45)';
     };
 
     // Particle class definition
