@@ -43,7 +43,7 @@ export default function Hero() {
           {/* CTA Button */}
           <div className="animate-fade-up delay-300">
             <button
-              className="flex items-center justify-between gap-6 px-8 py-[16px] bg-zinc-300 hover:bg-white text-black rounded-2xl font-body-md font-bold text-xs tracking-wider uppercase transition-all duration-300 active:scale-95 shadow-md cursor-pointer border border-white/10"
+              className="flex items-center justify-between gap-6 px-8 py-[16px] bg-zinc-300 hover:bg-white text-black rounded-2xl font-body-md font-bold text-xs tracking-wider uppercase transition-all duration-300 active:scale-95 shadow-md cursor-pointer border border-white/10 -ml-4"
             >
               <span>Explore Club</span>
               <span className="text-sm font-black">→</span>
