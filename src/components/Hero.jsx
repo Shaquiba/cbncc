@@ -21,7 +21,7 @@ export default function Hero() {
           
           {/* Main Headline Stacked Vertically */}
           <h1 
-            className="text-[clamp(2.3rem,9.2vw,4.2rem)] font-black text-white uppercase tracking-tight leading-[0.95] mb-6 animate-fade-up delay-100"
+            className="text-[clamp(2.3rem,9.2vw,4.2rem)] font-black text-zinc-400 uppercase tracking-tight leading-[0.95] mb-6 animate-fade-up delay-100"
             style={{ fontFamily: "'Sora', 'Montserrat', sans-serif" }}
           >
             BUILD.<br />
@@ -32,7 +32,7 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p
-            className="text-[clamp(0.95rem,4vw,1.3rem)] leading-relaxed text-zinc-400 mb-8 font-body-md animate-fade-up delay-200"
+            className="text-[clamp(0.95rem,4vw,1.3rem)] leading-relaxed text-white mb-8 font-body-md animate-fade-up delay-200"
             style={{ fontFamily: "'Space Grotesk', sans-serif" }}
           >
             A community of<br />
@@ -43,7 +43,7 @@ export default function Hero() {
           {/* CTA Button */}
           <div className="animate-fade-up delay-300">
             <button
-              className="flex items-center justify-between gap-6 px-8 py-[16px] bg-zinc-100 hover:bg-white text-black rounded-2xl font-body-md font-bold text-xs tracking-wider uppercase transition-all duration-300 active:scale-95 shadow-md cursor-pointer border border-white/10"
+              className="flex items-center justify-between gap-6 px-8 py-[16px] bg-zinc-300 hover:bg-white text-black rounded-2xl font-body-md font-bold text-xs tracking-wider uppercase transition-all duration-300 active:scale-95 shadow-md cursor-pointer border border-white/10"
             >
               <span>Explore Club</span>
               <span className="text-sm font-black">→</span>
@@ -63,7 +63,7 @@ export default function Hero() {
               color: isDark ? "rgba(255, 255, 255, 0.54)" : "rgba(2, 2, 2, 0.94)",
               fontFamily: "'Sora', sans-serif"
             }}
-            className="relative z-10 text-[27vw] md:text-[25vw] lg:text-[21vw] font-medium font-black tracking-tighter uppercase text-center leading-none select-none -translate-y-10"
+            className="relative z-10 text-[27vw] md:text-[25vw] lg:text-[21vw]  font-medium font-black tracking-tighter uppercase text-center leading-none select-none -translate-y-10"
           >
             CBNCC
           </h1>
@@ -99,14 +99,13 @@ export default function Hero() {
         </div>
 
         <div className="absolute bottom-48 sm:bottom-15 left-4 md:left-20 z-30 max-w-md hidden sm:block">
-          <p
-            className="text-sm md:text-base font-bold leading-relaxed mb-5"
-            style={{ 
-              fontFamily: "'Space Grotesk', sans-serif",
-              color: isDark ? "rgba(255, 255, 255, 0.9)" : "rgba(0, 0, 0, 0.88)"
-            }}
+           <p
+            className="text-[clamp(0.95rem,4vw,1.3rem)] leading-relaxed text-white mb-8 font-body-md animate-fade-up delay-200"
+            style={{ fontFamily: "'Space Grotesk', sans-serif" }}
           >
-            Code Busters & Coding Club is the official Tech club of <strong className="font-extrabold" style={{ color: isDark ? "rgba(255, 255, 255, 1)" : "rgba(0, 0, 0, 1)" }}>NETAJI SUBHAS UNIVERSITY</strong> which brings together coders, innovators, and problem-solvers.
+            A community of
+            innovators, builders
+            and changemakers.
           </p>
           <div className="z-30 flex flex-row gap-4 mt-6 justify-center pr-15">
             <button

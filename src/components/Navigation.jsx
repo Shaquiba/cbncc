@@ -10,25 +10,12 @@ export default function Navigation() {
         <div className="flex justify-between items-center w-full max-w-container-max mx-auto">
           {/* Logo with Target Icon */}
           <div className="flex items-center gap-3 select-none cursor-pointer">
-            {/* Concentric Target Icon SVG */}
-            <svg className="w-8 h-8 text-white" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="50" cy="50" r="40" stroke="currentColor" strokeWidth="2.5" />
-              <circle cx="50" cy="50" r="30" stroke="currentColor" strokeWidth="2.5" />
-              <circle cx="50" cy="50" r="20" stroke="currentColor" strokeWidth="2" strokeDasharray="3 3" />
-              <circle cx="50" cy="50" r="10" stroke="currentColor" strokeWidth="2.5" />
-              <circle cx="50" cy="50" r="3.5" fill="currentColor" />
-              <line x1="50" y1="2" x2="50" y2="98" stroke="currentColor" strokeWidth="1.5" strokeDasharray="4 4" />
-              <line x1="2" y1="50" x2="98" y2="50" stroke="currentColor" strokeWidth="1.5" strokeDasharray="4 4" />
-            </svg>
-            <div className="flex flex-col leading-[1.1]">
-              <span className="font-body-md text-[9px] sm:text-[10px] font-bold tracking-[0.25em] text-zinc-400">
-                CLUB
-              </span>
-              <span className="font-display-xl text-base sm:text-lg font-black tracking-wider text-white">
+        
+              <span className="font-display-xl text-base sm:text-lg font-black tracking-wider text-zinc-400">
                 CBNCC
               </span>
             </div>
-          </div>
+
 
           {/* Hamburger Toggle Button */}
           <button
